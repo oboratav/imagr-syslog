@@ -3,7 +3,7 @@ import logging.handlers
 
 import falcon
 
-from . import settings
+from imagr_syslog import settings
 
 logging.config.dictConfig(settings.LOGGING_CONFIG)
 
