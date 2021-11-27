@@ -26,7 +26,7 @@ class ImagrReportLine(object):
             print(data)
             # Send the data to log handler
             logger.log(settings.LOG_LEVEL, req.get_param("message"), extra=data)
-        
+
         # Return a response
         resp.status = falcon.HTTP_200
 
