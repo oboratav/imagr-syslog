@@ -23,7 +23,6 @@ class ImagrReportLine(object):
         }
         # If there's no serial number, discard the request
         if data["serial_number"] != "":
-            print(data)
             # Send the data to log handler
             logger.log(settings.LOG_LEVEL, req.get_param("message"), extra=data)
 
