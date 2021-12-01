@@ -11,6 +11,7 @@ class ImagrLogFilter(logging.Filter):
         if record.message in [""]:
             return 0
 
+        record.serial_number = str(getattr(record, "serial_number", ""))
         if record.serial_number.strip() in [""]:
             return 0
 
