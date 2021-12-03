@@ -9,7 +9,7 @@ logging.config.dictConfig(settings.LOGGING_CONFIG)
 
 logger = logging.getLogger(__name__)
 
-class ImagrReportLine(object):
+class ImagrReportLine:
     def on_post(self, req, resp):
         """
         Handles POST requests from Imagr
